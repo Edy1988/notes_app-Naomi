@@ -1,3 +1,9 @@
+require 'socket'
+
+server = TCPServer.new(2345)
+
+socket = server.accept
+
 class Todo
 
   def initialize(string)
